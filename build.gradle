@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile "junit:junit:4.11"
+}
+
+mainClassName = "tddbc.App"
+
+/*
+gradle run を実行するだけで、アプリケーションを実行することができます。
+gradle install で build/install/projectName 配下に アプリケーションイメージを生成することができます。
+gradle distZip で ディストリビューションを含む ZIP ファイルを生成することができます
+*/
