@@ -3,6 +3,9 @@ apply plugin: 'idea'
 apply plugin: 'eclipse'
 apply plugin: 'application'
 
+compileJava {
+    options.encoding = 'UTF-8'
+}
 
 repositories {
     mavenCentral()
